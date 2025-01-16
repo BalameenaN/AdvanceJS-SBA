@@ -1,0 +1,91 @@
+#header{
+    background-color:#FEDEBE;
+    height:60px;
+    
+}
+#menu{
+    float: right;
+    list-style-type: none;
+    display: flex;
+   
+}
+.btn{
+    margin: 7px 7px;
+     border:1px solid orange;
+    background-color: rgb(244, 204, 130);
+    padding: 5px 5px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+#logo{
+    float:left;
+    margin-top: 20px;
+    margin-left: 10px;
+    color:rgb(236, 92, 9);
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+#center-img{
+    width: 100%;
+    opacity: 0.7;
+    height: 600px;
+}
+#floating{
+    position: absolute;
+    top: 40%;
+    bottom:50%;
+    left:30%;
+}
+.signup{
+    position:absolute;
+    left:50%;
+    text-decoration: none;
+    color: black;
+    border:1px solid orange;
+    background-color: rgb(244, 204, 130);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+#top{
+    position: absolute;
+    color: rgb(236, 92, 9);
+    bottom:80%;
+    left:35%;
+}
+#jewellery{
+    border-radius: 50%;
+    width:30%;
+    height:40%;
+    margin:5px 5px;
+
+}
+#shoes,#furniture{
+    border-radius: 50%;
+    width:20%;
+    height:40%;
+    margin:5px 5px;
+}
+
+/*#furniture:hover,#jewellery:hover{
+    border:5px solid orange;
+}*/
+#shoes:hover{
+    border:5px solid rgb(188, 225, 23);
+}
+#img-container{
+    width:20%;
+    display:flex;
+    text-align: center;
+    
+}
+#img-container img{
+    margin:30px 40px;
+    border: 1px solid grey;
+    padding: 20px 20px;
+    
+    
+}
