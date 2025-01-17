@@ -1,4 +1,6 @@
-import {men, menSelected, content2} from './function.js';
+import {men, content2} from './function.js';
+//men's clothing category
+let menSelected = false;
 men.addEventListener('click', eventFunction2);
 async function eventFunction2() {
   content2.innerHTML = "";

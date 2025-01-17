@@ -1,13 +1,13 @@
 
 let content = document.getElementById("img-container");
 let content1 = document.getElementById("img-container1");
-export let content2 = document.getElementById("img-container2");
 let jwl = document.getElementById("jewellery");
 let jwlSelected = false;
 let women = document.getElementById("women");
 let womenSelected = false;
+export let content2 = document.getElementById("img-container2");
 export let men = document.getElementById("mens");
-export let menSelected = false;
+let imgContent = document.getElementById("img-content");
 
 //jewellery icon 
 jwl.addEventListener('click', eventFunction);
@@ -28,7 +28,6 @@ async function eventFunction() {
 
       prodJson.forEach(element => {
         let img = document.createElement("img");
-
         img.src = element.image;
         img.style.width = "100px";
         content.appendChild(img);
