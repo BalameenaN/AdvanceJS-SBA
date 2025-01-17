@@ -57,35 +57,58 @@
     left:35%;
 }
 #jewellery{
-    border-radius: 50%;
+    border-radius: 60%;
     width:30%;
     height:40%;
     margin:5px 5px;
+    border: 5px solid white;
 
 }
-#shoes,#furniture{
+#women,#mens{
     border-radius: 50%;
     width:20%;
     height:40%;
     margin:5px 5px;
+    border: 3px solid white;
 }
 
-/*#furniture:hover,#jewellery:hover{
+#mens:hover,#jewellery:hover{
     border:5px solid orange;
-}*/
-#shoes:hover{
-    border:5px solid rgb(188, 225, 23);
 }
-#img-container{
+#women:hover{
+    border:5px solid orange;
+}
+#img-container,#img-container1,#img-container2{
     width:20%;
     display:flex;
-    text-align: center;
+   margin-left: 200px;
+    
     
 }
 #img-container img{
-    margin:30px 40px;
+    margin:30px 50px;
     border: 1px solid grey;
+    background: white;
     padding: 20px 20px;
     
+}
+#img-container1 img{
+    margin:30px 50px;
+    border: 1px solid grey;
+    background: white;
+    padding: 20px 20px;
     
+}
+#img-container2 img{
+    margin:30px 50px;
+    border: 1px solid grey;
+    background: white;
+    padding: 20px 20px;  
+}
+body{
+
+    background-color: antiquewhite;
+}
+#img-container1{
+
 }
