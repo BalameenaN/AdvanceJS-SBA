@@ -8,11 +8,13 @@ let womenSelected = false;
 export let content2 = document.getElementById("img-container2");
 export let men = document.getElementById("mens");
 let imgContent = document.getElementById("img-content");
+let text = document.getElementById("text-container");
 
 //jewellery icon 
 jwl.addEventListener('click', eventFunction);
 async function eventFunction() {
   content.innerHTML = "";
+  
   jwl.style.borderColor = 'orange';
   jwlSelected = !jwlSelected;
   if (jwlSelected == true) {
@@ -30,7 +32,12 @@ async function eventFunction() {
         let img = document.createElement("img");
         img.src = element.image;
         img.style.width = "100px";
+        let price = document.createElement("p");
+        
+        price.textContent = `PRICE: $${element.price}`;
+        console.log(element.price);
         content.appendChild(img);
+        content.appendChild(price);
       });
 
     } catch (error) {
