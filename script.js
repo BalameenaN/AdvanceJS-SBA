@@ -18,11 +18,29 @@ async function eventFunction2() {
       console.log(prodJson, "prodJson");
 
       prodJson.forEach(element => {
+        //creating the div element to hold image and details
+        let div = document.createElement("div")
+        div.classList.add("main");
         let img = document.createElement("img");
-
         img.src = element.image;
         img.style.width = "100px";
-        content2.appendChild(img);
+        //creating elements for dettils
+        let name = document.createElement("p");
+        let price = document.createElement("p");
+        let rating = document.createElement("p");
+        let button = document.createElement("button");
+        name.textContent = element.title;
+        price.textContent = `PRICE: $${element.price}`;
+        rating.textContent = `RATING: ${element.rating.rate}`;
+        button.textContent = "Add to Cart";
+        console.log(element.price);
+        //appending the child elements inside the div
+        div.appendChild(img);
+        div.appendChild(name);
+        div.appendChild(price);
+        div.appendChild(rating);
+        div.appendChild(button);
+        content2.appendChild(div);
       });
 
     } catch (error) {

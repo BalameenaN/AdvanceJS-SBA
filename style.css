@@ -1,17 +1,19 @@
-#header{
-    background-color:#FEDEBE;
-    height:60px;
-    
+#header {
+    background-color: #FEDEBE;
+    height: 60px;
+
 }
-#menu{
+
+#menu {
     float: right;
     list-style-type: none;
     display: flex;
-   
+
 }
-.btn{
+
+.btn {
     margin: 7px 7px;
-     border:1px solid orange;
+    border: 1px solid orange;
     background-color: rgb(244, 204, 130);
     padding: 5px 5px;
     width: 50px;
@@ -19,99 +21,136 @@
     border-radius: 5px;
 
 }
-#logo{
-    float:left;
+
+#logo {
+    float: left;
     margin-top: 20px;
     margin-left: 10px;
-    color:rgb(236, 92, 9);
+    color: rgb(236, 92, 9);
 }
-.btn a{
+
+.btn a {
     text-decoration: none;
     color: black;
 }
-#center-img{
+
+#center-img {
     width: 100%;
     opacity: 0.7;
     height: 600px;
 }
-#floating{
+
+#floating {
     position: absolute;
     top: 40%;
-    bottom:50%;
-    left:30%;
+    bottom: 50%;
+    left: 30%;
 }
-.signup{
-    position:absolute;
-    left:50%;
+
+.signup {
+    position: absolute;
+    left: 50%;
     text-decoration: none;
     color: black;
-    border:1px solid orange;
+    border: 1px solid orange;
     background-color: rgb(244, 204, 130);
     padding: 5px 5px;
     border-radius: 5px;
 }
-#top{
+
+#top {
     position: absolute;
     color: rgb(236, 92, 9);
-    bottom:80%;
-    left:35%;
+    bottom: 80%;
+    left: 35%;
 }
-#jewellery{
+
+#jewellery {
     border-radius: 60%;
-    width:30%;
-    height:40%;
-    margin:5px 5px;
+    width: 30%;
+    height: 40%;
+    margin: 5px 5px;
     border: 5px solid white;
 
 }
-#women,#mens{
+
+#women,
+#mens {
     border-radius: 50%;
-    width:20%;
-    height:40%;
-    margin:5px 5px;
+    width: 20%;
+    height: 40%;
+    margin: 5px 5px;
     border: 3px solid white;
 }
 
-#mens:hover,#jewellery:hover{
-    border:5px solid orange;
+#mens:hover,
+#jewellery:hover {
+    border: 5px solid orange;
 }
-#women:hover{
-    border:5px solid orange;
+
+#women:hover {
+    border: 5px solid orange;
 }
-#img-container,#img-container1,#img-container2{
-    width:20%;
-    display:flex;
-   margin-left: 200px;
-    
-    
+/*#container{
+    display : flex;
+  
+}*/
+
+#img-container,
+#img-container1,
+#img-container2 {
+   width: 100%;
+    display: flex;
+   
+    height:90%;
+    justify-content: center;
+    padding: 20px 20px;
+    margin:10px 10px;
 }
-#img-container img{
-    margin:30px 50px;
+
+#img-container img {
+    margin: 40px 20px;
     border: 1px solid grey;
     background: white;
     padding: 20px 20px;
-    
+
 }
-#img-container1 img{
-    margin:30px 50px;
+
+#img-container1 img {
+    margin: 20px 50px;
     border: 1px solid grey;
     background: white;
     padding: 20px 20px;
-    
+
 }
-#img-container2 img{
-    margin:30px 50px;
+
+#img-container2 img {
+    margin: 30px 50px;
     border: 1px solid grey;
     background: white;
-    padding: 20px 20px;  
+    padding: 20px 20px;
 }
-body{
+
+body {
 
     background-color: antiquewhite;
 }
- #img-container p{
-    display:flex;
+button{
+    padding: 5px 5px;
+    border-radius: 6px;
+    border: 1px solid orange;
+    background-color: rgb(230, 148, 93);
+    margin-bottom: 20px;
     
- }
+}
+.main{
+    /*border:1px solid red;*/
+    background: rgb(239, 209, 154);
+    border-radius: 10px;
+    max-width:300px;
+    margin:10px 10px;
+    display:block;
+  
+}
 
 

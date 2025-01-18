@@ -7,14 +7,14 @@ let women = document.getElementById("women");
 let womenSelected = false;
 export let content2 = document.getElementById("img-container2");
 export let men = document.getElementById("mens");
-let imgContent = document.getElementById("img-content");
+let imgContent = document.getElementById("container");
 let text = document.getElementById("text-container");
 
 //jewellery icon 
 jwl.addEventListener('click', eventFunction);
 async function eventFunction() {
   content.innerHTML = "";
-  
+
   jwl.style.borderColor = 'orange';
   jwlSelected = !jwlSelected;
   if (jwlSelected == true) {
@@ -29,15 +29,29 @@ async function eventFunction() {
       console.log(prodJson, "prodJson");
 
       prodJson.forEach(element => {
+        //creating the div element to hold image and details
+        let div = document.createElement("div")
+        div.classList.add("main");
         let img = document.createElement("img");
         img.src = element.image;
         img.style.width = "100px";
+        //creating elements for dettils
+        let name = document.createElement("p");
         let price = document.createElement("p");
-        
+        let rating = document.createElement("p");
+        let button = document.createElement("button");
+        name.textContent = element.title;
         price.textContent = `PRICE: $${element.price}`;
+        rating.textContent = `RATING: ${element.rating.rate}`;
+        button.textContent = "Add to Cart";
         console.log(element.price);
-        content.appendChild(img);
-        content.appendChild(price);
+        div.appendChild(img);
+        div.appendChild(name);
+        div.appendChild(price);
+        div.appendChild(rating);
+        div.appendChild(button);
+        content.appendChild(div);
+
       });
 
     } catch (error) {
@@ -66,11 +80,29 @@ async function eventFunction1() {
       console.log(prodJson, "prodJson");
 
       prodJson.forEach(element => {
+        //creating the div element to hold image and details
+        let div = document.createElement("div")
+        div.classList.add("main");
         let img = document.createElement("img");
-
         img.src = element.image;
         img.style.width = "100px";
-        content1.appendChild(img);
+        //creating elements for dettils
+        let name = document.createElement("p");
+        let price = document.createElement("p");
+        let rating = document.createElement("p");
+        let button = document.createElement("button");
+        name.textContent = element.title;
+        price.textContent = `PRICE: $${element.price}`;
+        rating.textContent = `RATING: ${element.rating.rate}`;
+        button.textContent = "Add to Cart";
+        console.log(element.price);
+        //appending the child elements inside the div
+        div.appendChild(img);
+        div.appendChild(name);
+        div.appendChild(price);
+        div.appendChild(rating);
+        div.appendChild(button);
+        content1.appendChild(div);
       });
 
     } catch (error) {
