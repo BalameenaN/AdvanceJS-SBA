@@ -18,8 +18,8 @@ async function loginEvent(e){
             "Content-Type": "application/json",
           },
         body:JSON.stringify({
-            username: user.value,
-            password: pwd.value
+            username: user.value, //mor_2314
+            password: pwd.value //83r5^_
         })
     })
     if(!response.ok){
