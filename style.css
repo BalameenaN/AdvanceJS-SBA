@@ -134,6 +134,7 @@
 body {
 
     background-color: antiquewhite;
+    width:100%;
 }
 button{
     padding: 5px 5px;

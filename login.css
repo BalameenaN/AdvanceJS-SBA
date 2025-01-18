@@ -1,0 +1,76 @@
+fieldset{
+    width: 400px;
+    text-align: center;
+    height:180px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:200px;
+    border:1px solid red;
+    border-radius: 6px;
+    background:rgb(247, 215, 156);
+    
+}
+input{
+  
+margin-top: 30px;
+padding: 5px 5px;
+
+}
+
+#login{
+
+    margin-top: 20px;
+    background:rgb(252, 198, 100);
+    border:none;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+#login:hover{
+    background:rgb(252, 185, 62);
+}
+
+#header {
+    background-color: #FEDEBE;
+    height: 60px;
+
+}
+
+#menu {
+    float: right;
+    list-style-type: none;
+    display: flex;
+
+}
+.btn {
+    margin: 7px 7px;
+    border: 1px solid orange;
+    background-color: rgb(244, 204, 130);
+    padding: 5px 5px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+#logo {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(236, 92, 9);
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+body::before{
+    content: "";
+    position: fixed;
+    background-image: url("./background.jpg");
+    opacity: 0.3;
+    z-index:-1;
+    inset:1px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}

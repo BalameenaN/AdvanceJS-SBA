@@ -1,4 +1,6 @@
 import {men, content2} from './function.js';
+
+export let user= document.getElementById("user");
 //men's clothing category
 let menSelected = false;
 men.addEventListener('click', eventFunction2);
